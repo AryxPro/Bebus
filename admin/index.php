@@ -9,7 +9,7 @@ try{
     }
 
     if ($_SESSION['admin'] != 1) {
-        header('Location: ../user/user.php');
+        header('Location: ../user/index.php');
         exit;
     }
 

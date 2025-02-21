@@ -25,10 +25,7 @@ $user_id = $stmt->fetch();
 
 
 if($user_id != $_SESSION['user_id'] && $_SESSION['admin'] != 1){
-    if($_SESSION['admin'] != 1){
-        header('Location: ../index.php');
-    }
-    header('Location: ../admin/admin.php');
+    header('Location: ../index.php');
 }
 
 $stmt = $db->prepare("DELETE FROM message WHERE id = :id;");

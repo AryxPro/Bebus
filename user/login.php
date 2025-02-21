@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['user_id'] = $user['id'];
                 $_SESSION['admin'] = $user['admin'];
                 $_SESSION['error'] = null;
-                header('Location: user.php');
+                header('Location: index.php');
                 exit;
             } else {
                 $errorLogin=true;

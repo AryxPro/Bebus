@@ -8,7 +8,7 @@ try{
     }
 
     if ($_SESSION['admin'] == 1) {
-        header('Location: ../admin/admin.php');
+        header('Location: ../admin/index.php');
     }
 
     $nameFilter = $_GET['nameFiltr'] ?? null;
